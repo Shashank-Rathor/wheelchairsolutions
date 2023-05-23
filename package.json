@@ -1,9 +1,10 @@
 {
     "name": "Wheel_chair",
     "version": "0.1.0",
+    "homepage": "https://gitname.github.io/wheelchairsolutions",
     "private": true,
     "devDependencies": {
-        "gh-pages": "^3.1.0",
+        "gh-pages": "^3.2.3",
         "node": "^8.15.0"
     },
     "dependencies": {
@@ -42,6 +43,8 @@
         "styled-components": "^5.2.1"
     },
     "scripts": {
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build",
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
