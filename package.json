@@ -1,0 +1,65 @@
+{
+    "name": "Wheel_chair",
+    "version": "0.1.0",
+    "private": true,
+    "devDependencies": {
+        "gh-pages": "^3.1.0",
+        "node": "^8.15.0"
+    },
+    "dependencies": {
+        "@babel/runtime": "^7.6.3",
+        "@material-ui/core": "^4.11.2",
+        "@material-ui/icons": "^4.11.2",
+        "axios": "^0.21.0",
+        "bootstrap": "^4.5.3",
+        "classnames": "2.2.6",
+        "emailjs-com": "^2.6.4",
+        "history": "4.9.0",
+        "moment": "2.24.0",
+        "node-sass": "^4.13.1",
+        "prop-types": "15.7.2",
+        "react": "^16.9.0",
+        "react-bootstrap": "^1.4.0",
+        "react-cookie-consent": "^6.2.1",
+        "react-cookies": "^0.1.1",
+        "react-dom": "^16.9.0",
+        "react-flippy": "^0.1.5",
+        "react-ga": "^3.3.0",
+        "react-google-recaptcha": "^2.1.0",
+        "react-google-recaptcha-v3": "^1.7.1",
+        "react-modal": "^3.12.1",
+        "react-multi-carousel": "^2.6.1",
+        "react-router-dom": "^5.2.0",
+        "react-router-hash-link": "^1.2.2",
+        "react-scripts": "^3.4.1",
+        "react-scroll-to-component": "^1.0.2",
+        "react-select": "^3.1.1",
+        "react-simple-chatbot": "^0.6.1",
+        "react-tilt": "^0.1.4",
+        "reactstrap": "^8.0.1",
+        "semantic-ui-css": "^2.4.1",
+        "semantic-ui-react": "^2.0.1",
+        "styled-components": "^5.2.1"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    }
+}

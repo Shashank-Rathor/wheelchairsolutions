@@ -1,0 +1,522 @@
+@import '../variable';
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap');
+/*******************
+topbar color
+*******************/
+.topbar.fixed-header {
+    background: $dark;
+}
+
+/*******************
+Static slide 10
+*******************/
+.static-slider-head{
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: auto;
+    background-size:cover;
+    background-position: center center;
+    .title{
+        color:black;
+        font-weight: 700;
+        font-size: 70px;
+        line-height: 100px;
+    }
+    .subtitle{
+        color:$white;
+        line-height: 30px;
+    }
+}
+/*******************
+Header 1
+*******************/
+
+.h1-nav {
+    padding: 15px 0;
+    .navbar-nav .nav-item {
+        margin: 0 20px;
+        .nav-link {
+            padding: 12px 0px;
+            color: $muted;
+            font-weight: 400;
+            &:hover {
+                color: $success;
+            }
+        }
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+}
+/*******************
+Header 2
+*******************/
+
+.h2-nav {
+    padding: 15px 0;
+    .navbar-nav .nav-item {
+        margin: 0 20px;
+        .nav-link {
+            padding: 12px 0px;
+            color: $white;
+            font-weight: 400;
+            &:hover {
+                color: $info;
+            }
+        }
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+}
+
+/*******************
+Static slide 10
+*******************/
+.static-slider10 {
+    padding: 10% 0;
+    background-image: $banner-slider;
+    background-size:cover;
+    background-position: center center;
+    .title{
+        color:$white;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 50px;
+    }
+    .subtitle{
+        color:$white;
+    }
+}
+@media(max-width:900px) {
+    .static-slider10 {
+        .title {
+            font-size:40px;
+            line-height: 45px;
+        }
+    }
+}
+
+@media(max-width:500px) {
+    .logo {
+        width: 100%;
+    }
+  }
+
+
+.whatsappFooter{
+  position: fixed;
+  right: 40;
+  background: rgb(18,107,2);
+background: linear-gradient(198deg, rgba(18,107,2,1) 0%, rgba(79,226,24,1) 82%);
+  bottom: 60px;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  padding: 12px 16px;
+
+  .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  top: 0;
+  right: 60px;
+  z-index: 1;
+}
+}
+/* Show the tooltip text when you mouse over the tooltip container */
+.whatsappFooter:hover .tooltiptext {
+  visibility: visible;
+}
+/*******************
+Feature 4
+*******************/
+
+.wrap-feature4-box {
+    .icon-round {
+        font-size: 45px;
+        width: 80px;
+        height: 80px;
+        padding: 15px;
+        color: $themecolor;
+        line-height: 80px;
+        text-align: center;
+        display: inline-block;
+        margin: 20px 0 30px;
+        border-radius: 100%;
+    }
+}
+
+/*******************
+Modal
+*******************/
+.modal-form{
+  input{
+    margin-right: 40px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+  .message{
+    display: block;
+    border-radius: 10px;
+  }
+}
+
+@media(max-width:600px) {
+    .modal-form{
+        h2{
+          font-size: 20px;
+        }
+        h4{
+          font-size: 20px;
+        }
+        .message{
+          visibility: hidden;
+        }
+        input[type="Text"] {
+          width: 35%;
+        }
+        input[type="Submit"] {
+          position: absolute;
+          bottom: 30px;
+        }
+    }
+  }
+
+
+/*******************
+Feature 30
+*******************/
+.feature30{
+    position: relative;
+}
+.wrap-feature30-box{
+    position: absolute;
+    top:20%;
+    right: 0px;
+}
+.carFeature{
+  width: 70%;
+}
+.carText{
+  background-color: black;
+  opacity: 0.5;
+  width: 20%;
+  margin-left: 25%;
+  border-radius: 100px/100px;
+  h2{
+    color: white;
+    font-family: 'Lobster Two', cursive;
+  }
+}
+@media (max-width: 500px) {
+  .car{
+    width: 70%;
+    transform: scale(2);
+  }
+}
+@media (max-width: 500px) {
+  .carFeature{
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .videos{
+    width: 100%;
+    margin-left: 0;
+  }
+}
+@media (max-width: 500px) {
+.carText{
+    display: none;
+  }
+  .carImage{
+    margin-left: 10%;
+  }
+}
+
+
+/*******************
+team 2
+*******************/
+.team2{
+    .pro-pic{
+        min-height:200px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        &.t1 {
+            background-image: $t1;
+        }
+        &.t2 {
+            background-image: $t2;
+        }
+        &.t3 {
+            background-image: $t3;
+        }
+        &.t4 {
+            background-image: $t4;
+        }
+        &.t5 {
+            background-image: $t5;
+        }
+        &.t6 {
+            background-image: $t6;
+        }
+        .card-img-overlay{
+            background: rgba(26, 139, 243, 0.87);
+            display: none;
+
+            ul{
+                position: relative;
+                top:50%;
+                text-align: center;
+              li,Button,  li a{
+                    color:$white;
+                    margin-bottom: 10px;
+                    padding:0 10px;
+                    transition: 0.1s ease-in;
+                    display: block;
+                    &:hover{
+
+                        transform: translate3d(0px, -5px, 0px);
+                    }
+                }
+            }
+        }
+        &:hover{
+            .card-img-overlay{
+                display: block;
+            }
+        }
+    }
+    .title{
+        margin: 30px 0 0 0;
+    }
+    .subtitle{
+        margin: 0 0 20px 0;
+        font-size: 13px;
+    }
+}
+
+/*******************
+Pricing 8
+*******************/
+.pricing8{
+    .pricing-box{
+        sup{
+            top:-20px;
+            font-size: 16px;
+        }
+        .btn{
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
+        }
+    }
+}
+
+/*******************
+Details
+*******************/
+.wrapper{
+  h1{
+    font-family: 'Lobster', cursive;
+    font-size: 60px;
+    margin-top: 90px;
+    text-align: center;
+  }
+  h3{
+    font-family: 'Lobster', cursive;
+    margin: 10px 0;
+    text-align: center;
+  }
+  .front1{
+    background-image: $d1;
+    height: 500px;
+    background-size: auto;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+  }
+  .front2{
+    background-image: $d2;
+    height: 500px;
+      background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    margin-bottom: 20px;
+  }
+  .front3{
+    background-image: $d3;
+    background-color: white;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    margin-bottom: 20px;
+  }
+  img{
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .back{
+    background-image: $b1;
+    background-size: cover;
+    height: 500px;
+    background-repeat: no-repeat;
+  }
+  .implist{
+    border: solid black 2px;
+    li{
+      list-style-type: circle;
+      font-family: 'Merienda', cursive;
+      text-align: justify;
+      padding-right: 10px;
+      font-size: 15px;
+      margin-top: 18px;
+      color: black;
+    }
+    @media (max-width: 500px) {
+      li{
+        font-size: 14px;
+      }
+  }
+}
+.rightlist{
+  border: solid black 2px;
+  li{
+    list-style-type: circle;
+    text-align: justify;
+    padding-right: 10px;
+    font-family: 'Merienda', cursive;
+    font-size: 13px;
+    margin-top: 18px;
+    color: black;
+  }
+  @media (max-width: 500px) {
+    li{
+      font-size: 14px;
+    }
+}
+}
+  .list{
+    border: solid black 2px;
+    li{
+      list-style-type: circle;
+      font-family: 'Merienda', cursive;
+      font-size: 23px;
+      margin-top: 20px;
+      color: black;
+    }
+    @media (max-width: 500px) {
+      li{
+        font-size: 21px;
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .vid{
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+/*******************
+Portfolio 1
+*******************/
+.img-ho{
+    overflow:hidden;
+    img{
+        transition:0.1s ease-in;
+        &:hover{
+            transform:scale(1.1);
+        }
+    }
+}
+
+
+
+
+/*******************
+Testimonial 3
+*******************/
+
+  .testimonial3 {
+      .testi3 {
+          .card-body {
+              padding: 40px;
+          }
+          h6 {
+              line-height: 26px;
+          }
+          .thumb-img {
+              img {
+                  width: 60px;
+              }
+          }
+          .customer {
+              text-transform: uppercase;
+              font-size: 14px;
+              font-weight: 500;
+          }
+      }
+  }
+
+/*******************
+Blog homepage 2
+*******************/
+
+.blog-home2 {
+    [class*=col-] {
+          transition: 0.2s ease-in;
+          &:hover {
+              transform: translateY(-10px);
+          }
+      }
+    .date-pos{
+        padding: 10px;
+        display: inline-block;
+        position: absolute;
+        right:10px;
+        top:10px;
+        color:$white;
+        border-radius: $radius;
+        text-align: center;
+        span{
+            display: block;
+            font-size: 30px;
+            line-height: 30px;
+        }
+    }
+}
+
+/*******************
+Responsive
+*******************/
+@media(max-width:1024px) {
+    .static-slider10{
+        .title{
+                font-size:60px;
+                line-height: 60px;
+            }
+    }
+    .topbar {
+        background: $dark;
+    }
+
+}

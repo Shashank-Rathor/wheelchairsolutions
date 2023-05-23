@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "rehamo-wheelchair-solution",
+    "staging": "rehamo-wheelchair-solution"
+  }
+}

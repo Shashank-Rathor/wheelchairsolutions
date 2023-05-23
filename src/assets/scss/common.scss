@@ -1,0 +1,980 @@
+/*
+Template Name: Wrakit UI Kit
+Author: wrappixel
+Email: niravjoshi87@gmail.com
+File: scss
+*/
+
+
+/*******************
+Topbar
+*******************/
+
+.topbar {
+    padding: 0px;
+    transition: 0.2s ease-in;
+    width: 100%;
+    position: absolute;
+    z-index: 20;
+}
+
+/*******************
+Header 6
+*******************/
+.header6 {
+  background-color: black;
+  opacity: 0.5;
+  position: fixed;
+  width: 100%;
+    .navbar-toggler {
+        color: $white;
+    }
+
+    .navbar-brand {
+        line-height: 80px;
+    }
+}
+
+.h6-nav-bar {
+    padding: 0px;
+
+    .navbar-nav {
+        .nav-link {
+            padding: 20px 15px;
+            font-weight: bold;
+            font-size: 20px;
+            color: white;
+            transition-duration: 0.5s;
+            transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+        }
+
+        .nav-item:hover .nav-link,
+        .nav-item.active .nav-link {
+          font-size: 30px;
+            color: rgba(255, 255, 255, 1);
+        }
+    }
+
+    .act-buttons {
+        .btn {
+            margin: 10px 0 10px 10px;
+        }
+    }
+}
+
+@media(max-width:1023px) {
+    .h6-nav-bar {
+        .navbar-nav {
+            .nav-link {
+                padding: 15px 15px;
+            }
+        }
+
+        .act-buttons {
+            .btn {
+                margin: 10px 0 10px 0px;
+            }
+        }
+    }
+}
+
+.static-slider-head {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: auto;
+    background-size: cover;
+    background-position: center center;
+
+    .title {
+        color: $white;
+        font-weight: 700;
+        font-size: 70px;
+        line-height: 100px;
+    }
+
+    .subtitle {
+        color: $white;
+        line-height: 30px;
+    }
+}
+
+.banner2{
+  background-image: $banner-image;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: auto;
+  background-size: cover;
+  background-position: center center;
+  img{
+    width: 30%;
+    margin-left: 250px;
+  }
+  @media (max-width: 500px){
+    min-height: 200px;
+    img{
+      width: 70%;
+      margin-left: 50px;
+    }
+  }
+}
+
+/*******************
+Main & Page wrapper
+*******************/
+
+.page-wrapper {
+    padding-top: 0px;
+}
+
+#main-wrapper {
+    overflow: hidden;
+}
+
+
+/*******************
+container fluid
+*******************/
+
+.container-fluid {
+    padding: 0px;
+}
+
+
+/*******************
+footer
+*******************/
+
+.footer {
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+/*******************
+Fix-width
+*******************/
+
+.fix-width {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+/*******************
+Spacer
+*******************/
+
+.spacer {
+    padding: 50px 0;
+}
+
+.mini-spacer {
+    padding: 40px 0;
+}
+
+
+/*******************
+Title
+*******************/
+
+.title {
+    margin: 20px 0 15px;
+}
+
+
+/*******************
+Subtitle
+*******************/
+
+.subtitle {
+    color: $muted;
+    line-height: 24px;
+}
+
+
+/*******************
+card
+*******************/
+.card {
+    border: 0px;
+    margin-bottom: 30px;
+
+    &.card-shadow {
+        box-shadow: $card-shadow;
+    }
+}
+
+.card-group .card {
+    border: 1px solid $border;
+    margin-bottom: 30px;
+}
+
+
+/*******************
+Icon space
+*******************/
+
+.icon-space {
+    margin: 20px 0;
+}
+
+.linking {
+    color: $headingtext;
+
+    i {
+        font-size: 14px;
+        margin-left: 10px;
+        transition: 0.2s ease-in;
+    }
+
+    &:hover {
+        color: $themecolor;
+
+        i {
+            margin-left: 15px;
+        }
+    }
+}
+
+
+/*******************
+Listing
+*******************/
+
+.list-block {
+    margin: 0px;
+    padding: 0px;
+
+    li {
+        list-style: none;
+        padding: 10px 0;
+        display: flex;
+
+        i {
+            margin-right: 10px;
+            flex-shrink: 0px;
+            margin-top: 3px;
+        }
+    }
+
+    &.with-underline {
+        li {
+            border-bottom: 1px solid $border;
+            padding: 15px 0;
+        }
+    }
+}
+
+
+/*******************
+Listing
+*******************/
+
+.img-inline {
+    margin: 0px;
+    padding: 0px;
+
+    li {
+        list-style: none;
+
+        &.half-width {
+            width: 49%;
+            display: inline-block;
+            vertical-align: top;
+        }
+    }
+}
+
+
+/*******************
+Image shadow
+*******************/
+
+.img-shadow {
+    box-shadow: $img-shadow;
+}
+
+
+/*******************
+Image shadow
+*******************/
+
+.icon-round {
+    width: 80px;
+    line-height: 100px;
+    text-align: center;
+    border-radius: 100%;
+    display: inline-block;
+}
+
+.no-shrink {
+    flex-shrink: 0;
+}
+
+
+/*******************
+up section
+*******************/
+
+.up {
+    z-index: 10;
+    position: relative;
+}
+
+.bt-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    visibility: hidden;
+}
+
+
+/*******************
+both space
+*******************/
+
+.both-space {
+    margin: 80px 0;
+}
+
+
+/*******************
+Side text content
+*******************/
+
+.side-content {
+    padding: 40px 60px;
+}
+
+
+/*******************
+background cover
+*******************/
+
+.bg-cover {
+    background-size: cover;
+    min-height: 200px;
+}
+
+
+
+/*******************
+Max width
+*******************/
+
+.max-300 {
+    max-width: 300px;
+}
+
+.max-400 {
+    max-width: 400px;
+}
+
+.max-500 {
+    max-width: 500px;
+}
+
+.max-600 {
+    max-width: 600px;
+}
+
+
+/*******************
+line sticks
+*******************/
+
+.stick-bottom {
+    position: relative;
+    margin-bottom: 30px;
+
+    >span {
+        width: 30px;
+        height: 2px;
+        position: absolute;
+        bottom: -7px;
+        left: 0px;
+        display: inline-block;
+    }
+}
+
+
+/*******************
+position
+*******************/
+
+.po-absolute {
+    position: absolute;
+}
+
+.po-relative {
+    position: relative;
+}
+
+
+/*-------------------*/
+
+
+/*Bootstrap 4 hack*/
+
+
+/*-------------------*/
+
+.invisible {
+    visibility: hidden !important;
+}
+
+.hidden-xs-up {
+    display: none !important;
+}
+
+@media (max-width: 575px) {
+    .hidden-xs-down {
+        display: none !important;
+    }
+}
+
+@media (min-width: 576px) {
+    .hidden-sm-up {
+        display: none !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .hidden-sm-down {
+        display: none !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .hidden-md-up {
+        display: none !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .hidden-md-down {
+        display: none !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .hidden-lg-up {
+        display: none !important;
+    }
+}
+
+@media (max-width: 1199px) {
+    .hidden-lg-down {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .hidden-xl-up {
+        display: none !important;
+    }
+}
+
+.hidden-xl-down {
+    display: none !important;
+}
+
+/*************/
+/* General Listing*/
+/*************/
+
+.general-listing {
+    padding: 0px;
+    margin: 0px;
+
+    li {
+        list-style: none;
+
+        a {
+            color: $bodytext;
+            display: flex;
+            padding: 10px 0;
+            transition: 0.2s ease-in;
+            align-items: center;
+        }
+
+        &:hover a {
+            color: $themecolor;
+            padding-left: 10px;
+        }
+
+        i {
+            margin-right: 7px;
+            vertical-align: middle;
+        }
+    }
+
+    &.two-part {
+        li {
+            width: 49%;
+            display: inline-block;
+        }
+    }
+
+    &.only-li {
+        li {
+            padding: 5px 0;
+        }
+    }
+}
+
+
+/*************/
+
+
+/* form dark*/
+
+
+/*************/
+
+.form-control-dark {
+    background: $border;
+    color: $white;
+    border-color: $border;
+
+    &:focus {
+        background: $border;
+        color: $white;
+    }
+}
+
+
+/*************/
+
+
+/* social-round */
+
+
+/*************/
+
+.round-social {
+    a {
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        padding: 15px;
+        display: inline-block;
+        border-radius: 100%;
+        margin: 0 5px;
+        transition: 0.2s ease-in;
+
+        &:hover {
+            transform: translate3d(0px, -5px, 0px);
+        }
+    }
+
+    &.light {
+        a {
+            color: $dark;
+            background: $light;
+        }
+
+        a:hover {
+            background: $dark;
+            color: $white;
+        }
+    }
+}
+
+
+
+/*******************
+UI-Elements
+******************/
+
+
+/*******************
+Buttons
+******************/
+
+.button-group {
+    .btn {
+        margin-bottom: 7px;
+    }
+}
+
+
+/*==============================================================
+ Ui-bootstrap
+ ============================================================== */
+
+ul.list-icons {
+    margin: 0px;
+    padding: 0px;
+
+    li {
+        list-style: none;
+        line-height: 30px;
+        margin: 2px 0;
+        transition: 0.2s ease-in;
+
+        a {
+            color: $bodytext;
+
+            &:hover {
+                color: $themecolor;
+            }
+        }
+
+        i {
+            font-size: 13px;
+            padding-right: 8px;
+        }
+    }
+}
+
+ul.list-inline {
+    li {
+        display: inline-block;
+
+        &:first-child {
+            padding-left: 0px;
+        }
+
+        a {
+            color: $bodytext;
+
+            &:hover {
+                color: $themecolor;
+            }
+        }
+    }
+
+}
+
+ul.two-part {
+    margin: 0px;
+
+    li {
+        width: 48.8%;
+    }
+}
+
+
+
+
+/*******************
+ Card title
+*******************/
+
+.card-title {
+    font-size: 18px;
+}
+
+.card-subtitle {
+    color: $muted;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.card-inverse .card-bodyquote .blockquote-footer,
+.card-inverse .card-link,
+.card-inverse .card-subtitle,
+.card-inverse .card-text {
+    color: rgba(255, 255, 255, .65);
+}
+
+.card-default {
+    .card-header {
+        background: $white;
+        border-bottom: 0px;
+    }
+}
+
+.card-success {
+    background: $success;
+    border-color: $success;
+}
+
+.card-danger {
+    background: $danger;
+    border-color: $danger;
+}
+
+.card-warning {
+    background: $warning;
+    border-color: $warning;
+}
+
+.card-info {
+    background: $info;
+    border-color: $info;
+}
+
+.card-primary {
+    background: $primary;
+    border-color: $primary;
+}
+
+.card-dark {
+    background: $inverse;
+    border-color: $inverse;
+}
+
+.card-megna {
+    background: $megna;
+    border-color: $megna;
+}
+
+
+/*==============================================================
+ Cards page
+ ============================================================== */
+
+.card-columns .card {
+    margin-bottom: 20px;
+}
+
+.collapsing {
+    -webkit-transition: height .08s ease;
+    transition: height .08s ease;
+}
+
+.card-info {
+    background: $info;
+    border-color: $info;
+}
+
+.card-primary {
+    background: $primary;
+    border-color: $primary;
+}
+
+.card-outline-info {
+    border-color: $info;
+
+    .card-header {
+        background: $info;
+        border-color: $info;
+    }
+}
+
+.card-outline-inverse {
+    border-color: $inverse;
+
+    .card-header {
+        background: $inverse;
+        border-color: $inverse;
+    }
+}
+
+.card-outline-warning {
+    border-color: $warning;
+
+    .card-header {
+        background: $warning;
+        border-color: $warning;
+    }
+}
+
+.card-outline-success {
+    border-color: $success;
+
+    .card-header {
+        background: $success;
+        border-color: $success;
+    }
+}
+
+.card-outline-danger {
+    border-color: $danger;
+
+    .card-header {
+        background: $danger;
+        border-color: $danger;
+    }
+}
+
+.card-outline-primary {
+    border-color: $primary;
+
+    .card-header {
+        background: $primary;
+        border-color: $primary;
+    }
+}
+
+
+/*******************
+Custom-select
+******************/
+
+.custom-select {
+    background: url(../../assets/images/ui/custom-select.png) right .75rem center no-repeat;
+    border: 2px solid $border;
+    height: calc(2.25rem + 12px);
+}
+
+
+/*******************
+textarea
+******************/
+
+textarea {
+    resize: none;
+}
+
+.form-control-danger,
+.form-control-success,
+.form-control-warning {
+    padding-right: 2.25rem;
+    background-repeat: no-repeat;
+    background-position: center right .5625rem;
+    -webkit-background-size: 1.125rem 1.125rem;
+    background-size: 1.125rem 1.125rem;
+}
+
+.has-success .col-form-label,
+.has-success .custom-control,
+.has-success .form-check-label,
+.has-success .form-control-feedback,
+.has-success .form-control-label {
+    color: $success;
+}
+
+.has-success .form-control-success {
+    background-image: url(../../assets/images/ui/success.svg);
+}
+
+.has-success .form-control {
+    border-color: $success;
+}
+
+.has-warning .col-form-label,
+.has-warning .custom-control,
+.has-warning .form-check-label,
+.has-warning .form-control-feedback,
+.has-warning .form-control-label {
+    color: $warning;
+}
+
+.has-warning .form-control-warning {
+    background-image: url(../../assets/images/ui/warning.svg);
+}
+
+.has-warning .form-control {
+    border-color: $warning;
+}
+
+.has-danger .col-form-label,
+.has-danger .custom-control,
+.has-danger .form-check-label,
+.has-danger .form-control-feedback,
+.has-danger .form-control-label {
+    color: $danger;
+}
+
+.has-danger .form-control-danger {
+    background-image: url(../../assets/images/ui/danger.svg);
+}
+
+.has-danger .form-control {
+    border-color: $danger;
+}
+
+.input-group-addon {
+
+    [type="radio"]:not(:checked),
+    [type="radio"]:checked,
+    [type="checkbox"]:not(:checked),
+    [type="checkbox"]:checked {
+        position: initial;
+        opacity: 1;
+    }
+}
+
+.input-form .btn {
+    padding: 14px 12px;
+}
+
+.form-control-sm {
+    padding: .25rem .5rem;
+}
+
+
+/*******************
+common-innerpage-banner
+*******************/
+.banner-innerpage {
+    padding: 150px 0 100px;
+    background-size: cover;
+    background-position: center center;
+
+    .title {
+        color: $white;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .subtitle {
+        color: $white;
+    }
+}
+
+@media(max-width:900px) {
+    .static-slider10 {
+        .title {
+            font-size: 40px;
+            line-height: 45px;
+        }
+    }
+}
+
+.with-noborder {
+    .media {
+        border: 0px;
+        padding: 0px;
+        margin: 50px 0;
+    }
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: $themecolor;
+}
+
+/*******************
+Footer 4
+*******************/
+.footer4 {
+  background: #e6e6e6;
+    .f4-bottom-bar {
+        padding-top: 10px;
+        margin-top: 20px;
+
+        a {
+            color: $bodytext;
+
+            &:hover {
+                color: $info;
+            }
+        }
+    }
+
+    .round-social.light {
+        a {
+            width: 34px;
+            height: 34px;
+            line-height: 34px;
+            padding: 10px;
+
+            &:hover {
+                background: $info;
+            }
+        }
+    }
+}
